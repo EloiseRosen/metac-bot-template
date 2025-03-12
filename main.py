@@ -88,10 +88,10 @@ class Q1TemplateBot(ForecastBot):
     async def _call_perplexity(self, question: str, use_open_router: bool = False) -> str:
         prompt = clean_indents(
             f"""
-            You are an assistant to a superforecaster.
+            You are a brilliant assistant to a superforecaster.
             The superforecaster will give you a question they intend to forecast on.
             To be a great assistant, you generate a concise but detailed rundown of the most relevant news, including if the question would resolve Yes or No based on current information.
-            You do not produce forecasts yourself.
+            You do not produce forecasts yourself. Just report on the news. 
 
             Question:
             {question}
@@ -246,7 +246,7 @@ class Q1TemplateBot(ForecastBot):
         )
         prompt = clean_indents(
             f"""
-            You are a professional forecaster interviewing for a job.
+            You are a professional forecaster interviewing for a job. You are careful and thoughtful. 
 
             Your interview question is:
             {question.question_text}
