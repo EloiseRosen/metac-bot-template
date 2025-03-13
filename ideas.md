@@ -10,3 +10,4 @@ in the previous bot forecasting tournaments the bots do worse than humans, so we
 * how does perplexity do? andrew has API credits from his subscription
 * check out AskNews for news stories (free?)
 * metaculus provides free credits from anthropic and openai?
+* create a tree of branching dependent questions? So like, if the main question is "who will be Japanese prime minister on Jan 1, 2026", then a dependent question might be like "will Japan be in recession on that date?" Then it could recursively think through questions that get farther and farther away from the main question
